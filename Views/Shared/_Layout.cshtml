@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Sidebar 01</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="~/Content/css/bootstrap/mixins/_border-radius.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap/mixins/_screen-reader.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap/mixins/_visibility.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap/utilities/_stretched-link.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap/_media.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <style>
+        body {
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        .editLi {
+            position: absolute;
+            top: 6px;
+        }
+        .upimg {
+            background-color: black;
+            border-radius: 19px;
+            border-block-color: inherit;
+        }
+    </style>
+</head>
+<body>
+    @*<header>*@
+    @*<div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #222;">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("About", "About", "Home")</li>
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        </ul>
+                        <ul class="nav pull-right">
+
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <li class="pull-right editLi">@Html.ActionLink("Logout", "Logout", "User")</li>
+                            }
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>*@
+
+
+
+
+
+    <div>
+        @RenderBody()
+
+    </div>
+
+
+
+
+    @*<footer>
+            <h1></h1>
+        </footer>*@
+
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/jquery.min.js"></script>
+    <script src="~/Content/js/main.js"></script>
+    <script src="~/Content/js/popper.js"></script>
+</body>
+</html>
